@@ -30,4 +30,4 @@ Commands:
 ![alt text](./maze1.png "Sample input")
 
 ### Sample Output
-![alt text](./samples/output3.png "Sample input")
+![alt text](./samples/output3.png "Sample output")

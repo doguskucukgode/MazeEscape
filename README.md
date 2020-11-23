@@ -1,5 +1,5 @@
 # Maze Escape
-Analayzes given maze image and founds the escaping route for exit. Exports maze as png format and visializes route. Input file should be located on root folder and default is `maze1.png`. Image is exported on root folder as `output.png`
+Analayzes given maze image and founds the escaping route for exit. Exports maze as png format and visualizes the route. Input file should be located on root folder and default is `maze1.png`. Image is exported on root folder as `output.png`
 
 ## Running With Maven
 ```

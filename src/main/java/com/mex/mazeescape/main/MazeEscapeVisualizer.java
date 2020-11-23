@@ -29,6 +29,5 @@ public class MazeEscapeVisualizer {
                 mazeAnalyzer.getStartX(), mazeAnalyzer.getStartY());
         PngCreator pngCreator = new PngCreator(image, mazeAnalyzer.convertToImageIndex(mazeIndices));
         pngCreator.exportImage();
-
     }
 }

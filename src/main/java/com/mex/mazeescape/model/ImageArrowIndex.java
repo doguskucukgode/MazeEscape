@@ -4,6 +4,4 @@ public class ImageArrowIndex {
 
     private MazeIndex startMazeIndex;
     private MazeIndex endMazeIndex;
-
-
 }

@@ -3,7 +3,7 @@ package com.mex.mazeescape.input;
 import com.mex.mazeescape.model.ImageIndex;
 import com.mex.mazeescape.model.MazeIndex;
 
-import java.awt.*;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;

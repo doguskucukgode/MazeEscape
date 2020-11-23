@@ -4,7 +4,9 @@ import com.mex.mazeescape.config.AppConfig;
 import com.mex.mazeescape.model.ImageIndex;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -14,8 +16,8 @@ import java.util.Map;
 
 public class PngCreator {
 
-    private BufferedImage bufferedImage;
-    private List<ImageIndex> imageIndexList;
+    private final BufferedImage bufferedImage;
+    private final List<ImageIndex> imageIndexList;
 
     public PngCreator(BufferedImage bufferedImage, List<ImageIndex> imageIndexList) {
         this.bufferedImage = bufferedImage;
@@ -30,13 +32,6 @@ public class PngCreator {
         map.put(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         RenderingHints renderHints = new RenderingHints(map);
         g.setRenderingHints(renderHints);
-        /*
-        for (ImageIndex imageIndex: imageIndexList) {
-            g.setColor(Color.red);
-            g.drawRect((imageIndex.getImageStartY() + imageIndex.getImageEndY()) /2,
-                    (imageIndex.getImageStartX() + imageIndex.getImageEndX()) /2, 2,2);
-        }
-         */
 
         for (int i = 0; i+1 < imageIndexList.size(); i=i+2) {
             ImageIndex startIndex = imageIndexList.get(i);
@@ -48,11 +43,5 @@ public class PngCreator {
             lineArrow.draw(g);
         }
         ImageIO.write(bufferedImage, "PNG", new File(AppConfig.OUTPUT_FILE));
-    }
-
-    public static void drawCenteredCircle(Graphics2D g, int x, int y, int r) {
-        x = x-(r/2);
-        y = y-(r/2);
-        g.fillOval(x,y,r,r);
     }
 }

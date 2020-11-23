@@ -38,14 +38,18 @@ public class DfsBacktrackingMazeEscapeAlgorithm {
         if (isSafe(maze, x, y, maze.length, maze[0].length, solution) == true) {
             // mark x, y as part of solution path
             solution.add(new MazeIndex(x,y));
-            if (solveMazeUtil(maze, x, y + 1, solution))
+            if (solveMazeUtil(maze, x, y + 1, solution)) {
                 return true;
-            if (solveMazeUtil(maze, x + 1, y, solution))
+            }
+            if (solveMazeUtil(maze, x + 1, y, solution)) {
                 return true;
-            if (solveMazeUtil(maze, x, y - 1, solution))
+            }
+            if (solveMazeUtil(maze, x, y - 1, solution)) {
                 return true;
-            if (solveMazeUtil(maze, x - 1, y, solution))
+            }
+            if (solveMazeUtil(maze, x - 1, y, solution)) {
                 return true;
+            }
 
             /* If none of the above movements works then
                BACKTRACK: unmark x, y as part of solution
@@ -55,5 +59,4 @@ public class DfsBacktrackingMazeEscapeAlgorithm {
         }
         return false;
     }
-
 }

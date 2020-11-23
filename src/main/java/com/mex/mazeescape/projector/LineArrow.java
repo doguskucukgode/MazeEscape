@@ -1,6 +1,10 @@
 package com.mex.mazeescape.projector;
 
-import java.awt.*;
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Polygon;
 import java.awt.geom.AffineTransform;
 
 public class LineArrow {
@@ -47,5 +51,4 @@ public class LineArrow {
         g2.setTransform(tx);
         g2.fill(arrowHead);
     }
-
 }

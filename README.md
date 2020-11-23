@@ -4,14 +4,12 @@ Analayzes given maze image and founds the escaping route for exit. Exports maze 
 ## Running With Maven
 ```
 mvn exec:java -Dexec.mainClass="com.mex.mazeescape.main.MazeEscapeApplication"  -Dexec.args="-i ./maze1.png"
-
 ```
 
 ## Running With Executable jar
 ```
 mvn clean package
 java -jar target/MazeEscape-1.0-SNAPSHOT.jar -i ./maze1.png
-
 ```
 
 ## Help Screen

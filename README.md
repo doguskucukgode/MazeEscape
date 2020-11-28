@@ -17,7 +17,7 @@ java -jar target/MazeEscape-1.0-SNAPSHOT.jar -i ./maze1.png
 Usage: <main class> [-i=<inputFile>] [COMMAND]
 Maze escape application based png image
   -i, --inputFile=<inputFile>
-         Path to input file, default value is: ./maze1.png, file should be in
+         Path to input file, default value is: ./maze3.png, file should be in
            root folder
 Commands:
   help  Displays help information about the specified command
